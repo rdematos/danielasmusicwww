@@ -1,0 +1,36 @@
+application: danielasmusicwww
+version: latest
+runtime: python27
+api_version: 1
+threadsafe: no
+
+
+handlers:
+
+- url: /favicon\.ico
+  mime_type: image/vnd.microsoft.icon
+  static_files: static/img/favicon.ico
+  upload: static/img/favicon.ico
+
+- url: /img/(.*\.(gif|png|jpg))
+  static_files: static/img/\1
+  upload: static/img/(.*\.(gif|png|jpg))
+
+- url: /css
+  mime_type: text/css
+  static_dir: static/css
+
+- url: /js
+  mime_type: text/javascript
+  static_dir: static/js
+
+- url: /assets
+  static_dir: static/assets
+
+- url: .*
+  script: main.py
+
+- url: /(robots\.txt|humans\.txt|crossdomain\.xml)
+  static_files: static/\1
+  upload: static/(robots\.txt|humans\.txt|crossdomain\.xml)
+  

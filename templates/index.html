@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Daniela's Music</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="css/render.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-notify.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
+<script type="text/javascript" src="js/bootstrap-scrollspy.js"></script>
+<script type="text/javascript" src="js/bootstrap-collapse.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "http://augustinas.eu/dev/4/mobile.html";
+};
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("http://augustinas.eu/dev/4/mobile.html");
+};
+//-->
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+<style> #page {opacity:0;}</style>
+
+</head>
+
+
+<body data-spy="scroll" data-offset="10" id="page">
+<header>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                <div class="nav-collapse">
+                    <ul id="navi" class="nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#calendar">Calendar</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+    </div>
+</header>
+{% if notification %}
+<div class='notifications top-left'></div>
+{% endif %}
+<div id="home">
+    <div class="story">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3"> 
+                </div>
+                <div class="span9">
+                    <h1>Daniela's Music</h1>
+                    <p>Offering private lessons in piano, voice, music theory, composition. Experienced with very young children, as well as older children, casual and serious players.</p>
+                    <div class="row-fluid">
+                        <div class="span9">
+                            <h2>About Daniela DeMatos</h2>
+                            <p>Daniela DeMatos is a composer, collaborative pianist and piano teacher currently located in Cambridge, MA. She is a graduate from the Master of Music program in Collaborative Piano under Eda Shlyam at the Longy School of Music, where she is also a candidate for a Master of Music in Composition.</p>
+                            <p><a class="btn" href="#portfolio">View details »</a></p>
+                        </div>
+                        <!--/span-->
+                  </div>
+                    <!--/row--> 
+                </div>
+                <!--/span--> 
+            </div>
+            <!--/row--> 
+        </div>
+    </div>
+    <!--.story--> 
+</div>
+<!--#intro--> 
+
+
+<!-- floating objects in background, please documentation-->
+<!--
+<div class="bg"></div>
+<div class="bg2"></div>
+-->
+<!-- /floating objects in background -->
+
+<!--#about-->
+<div id="about">    
+        <div class="container">
+        <div class="story">
+			<div class="row">
+                    <h1>About Daniela</h1>
+                    <p>Daniela DeMatos is a composer, collaborative pianist and piano teacher currently located in Cambridge, MA. She is a graduate from the Master of Music program in Collaborative Piano under Eda Shlyam at the Longy School of Music, where she is also a candidate for a Master of Music in Composition. Daniela holds a Bachelor of Music in piano performance from Eastern Nazarene College, where she studied with Dr. Brady Millican. She has performed and taught in Finland, Estonia, Brazil, and Japan. Daniela discovered her love for music composition while taking a required music theory course for her Collaborative Piano degree, in the Fall of 2003. After a few years abroad in Spain, China, and Japan, Daniela has returned to Cambridge to pursue studies in music composition.</p><br>
+                    <p>As a teacher, Daniela is committed to her students. She tailors private lessons based on the student's needs, using a wide variety of techniques including Dalcroze Eurhythmics and Brazilian "O Passo" rhythm techniques. Daniela combines ear-training and formal music training into each lesson, giving the student a well-rounded music education from day one.</p>
+            </div>
+        </div><!--.story--> 
+    </div>
+</div>
+<!--#about-->
+
+<!--#portfolio-->
+<div id="portfolio">
+	<div class="container-fluid">
+    <div class="story">
+        <div class="row-fluid">
+                <h1>Portfolio</h1>
+                <p>Chronological list of compositions with a video sample of the score and live performance.</p>
+                <div class="span12">
+                  <h2>Orchestra</h2>
+                  <ul class="thumbnails">
+                    <li class="span6">
+                      <p>Psalm 51 for orchestra - won the Longy Conservatory Orchestra Composition Competition of 2012 (Julian Pellicano, conductor), and will be performed at <a href="http://calendar.boston.com/cambridge_ma/events/show/276054645-longy-large-ensembles-department-longy-conservatory-orchestra">Sander's Theater on October 24, 2012 at 8:00pm.</a></p>
+                    </li>
+                    <li class="span3">
+                      <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/260x180" alt="">
+                      </a>
+                    </li>
+                  </ul>
+
+                  <h2>Piano</h2>
+                  <ul class="thumbnails">
+                    <li class="span6">
+                      <p>Song of Solomon 5:2 for soprano and piano - was a collaboration between singer and composer. My goal is make a song cycle out of Song of Solomon. This is my attempt to capture in song, the peaceful moments just before the Shulamite's Dark Night of the Soul.</p>
+                    </li>
+                    <li class="span3">
+                      <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/260x180" alt="">
+                      </a>
+                    </li>
+                  </ul>
+
+                  <h2>Woodwind Trio</h2>      
+                  <ul class="thumbnails">
+                    <li class="span6">
+                      <p>Woodwind Trio I was written for the Radius Ensemble Competition in the Fall of 2011. It won the competition and was performed at the Longy School of Music on May 5, 2012. I had intended for it to be a serial 12-tone piece, with the 12-tones first presented in a chord and its resolution. I quickly abandoned the 12-tone idea, but kept the chord I began with. The piece then became about a gradual moving toward that defining chordal gesture (which you will hear right after the bassoon solo, and then slightly varied toward the last portfolio of the piece), followed by a move away from the chordal gesture. The moving away ebbs and flows between contrapuntal, disparate lines to homophonic gestures which convey unity in purpose between the instruments.  Two solos serve as the culmination of a section, and the pivot that leads to a contrasting section. As a result of the disjunct sections, the tutti sections become more intensified, and the homophonic sections more serene.</p>
+                    </li>
+                    <li class="span3">
+                      <iframe width="560" height="315" src="http://www.youtube.com/embed/Oiz00rvuhZ8?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                  </ul>
+
+                  <h2>Voice</h2>      
+                  <ul class="thumbnails">
+                    <li class="span6">
+                      <p>Nature in Amber was written for <a href="http://anthologyvoices.com/anth2011/index.html">Anthology Voices</a>, in collaboration with the Amber Room at Cambridge Montessori School. The first through portfolio graders from the Amber Room wrote acrostic poems based on nature. Daniela took the viewpoint of the children in writing the music. For example, in Winter, Daniela tried to capture in sound the wonder of winter. In Snow, Rain, and Arctic, Daniela portrayed the enthusiasm of a child engrossed in their own imagination.</p>
+                    </li>
+                     <li class="span3">
+                      <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/260x180" alt="">
+                      </a>
+                    </li>
+                  </ul>
+
+                  <h2>Voice and Piano</h2>      
+                  <ul class="thumbnails">
+                    <li class="span6">
+                      <p>That Passeth Understanding for soprano and piano - was performed at Longy’s September Fest 2011, by the Dean of the Longy School of Music, Wayman Chin (piano), and the Associate Dean, Karyl Ryczek (soprano). In the Fall of 2010, the composition students at Longy were assigned Denise Levertov’s poem, ‘...That Passeth All Understanding’ to set it to song. The title comes from a biblical passage, Philippians 4:7, a verse that is very dear to my heart. “And the peace of God, which passeth all understanding, shall keep (guard, guide) your hearts and minds through Christ Jesus.” Philippians 4:7. The assignment came at a time of personal turmoil in which peace took me by surprise. Peace, an awe, invaded my heart and, as the poem goes, “I don’t know when it began.” At some point, I simply found myself in the middle of it. Peace in the midst of tranquility is completely understandable. On the other hand, peace in the midst of turmoil transcends understanding. I wanted to capture in this song this peace that permeates and pervades over a quiet anguish, slowly dissipating turmoil. The turmoil is not eliminated from the music, but peace pervades completely. This juxtaposition passes natural understanding. Musically, what best captures this is the b-natural of the vocal line against the b-flat of the left hand of the piano, which is a theme throughout the song.</p>
+                    </li>
+                     <li class="span3">
+                      <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/260x180" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                  <h2>String Quartet</h2>      
+                  <ul class="thumbnails">
+                    <li class="span6">
+                      <p>Gracejo for String Quartet - won the Longitude Commissioning Project 2010, and was performed in December of 2010. Gracejo is an elegant word for joke in Portuguese, and implies connections with Brazilian folklore. I chose the title “Gracejo” because I was playing with different components of the children’s songs I grew up singing in Brazil. The lyrics to these children’s songs are usually funny or ironic, having a double meaning. Many of the lyrics go by very fast, giving the songs a playful yet aggressive feel. That playful aggression is a portfolio component of Brazilian music that I was experimenting with. You will hear plenty of passages that are playful, yet have an aggression about them. A portfolio element you will hear is the rhythm. I chose partido alto. You will hear it first in the cello. A calendar element is the playful ebb and flow of triplets that is used to accommodate the language, or to make it more flirtatious. It gets rather intense toward the end, but Brazilians have a reputation for always being joyful, full of humor and optimism, and so we return to some of that Brazilian way in the very end.</p>
+                    </li>
+                     <li class="span3">
+                      <iframe width="560" height="315" src="http://www.youtube.com/embed/YUBRCccJVMo?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                  </ul>
+                 <h2>Piano</h2>      
+                  <ul class="thumbnails">
+                    <li class="span6">
+                      <p>Piano Meditation is my first solo piano piece, written in the Spring of 2010. Writing for solo piano was a daunting idea to me. I did not know how I could contribute to an already rich and abundant repertoire written by the great masters. I felt a weightiness writing for solo piano in a way I did not feel writing for other mediums, perhaps because piano is my main instrument. So Piano Meditation is an exercise I forced upon myself of writing without judging. As it turns out, Piano Meditation is a series of random ideas streamed together into one piece. It begins with a mystical flowing lydian melody which I wrote for a children’s play, with mermaids in mind. The somber eerie melody which makes the bulk of the piece, was birthed out of a personal meditation in Isaiah 51, with verses12 and 13 in mind:  “I, even I, am He who comforts you. Who are you that you should be afraid of a man who will die, and of the son of a man who will be made like grass? And you forget the Lord your Maker, Who stretched out the heavens and laid the foundations of the earth.”  The romantic passage toward the end was an improvisation at the piano. Piano Meditation ends where it started, in e-flat lydian, enharmonically misspelled as d-sharp lydian, bringing the vast ideas full circle.</p>
+                    </li>
+                    <li class="span3">
+                      <a href="#" class="thumbnail">
+                        <img src="http://placehold.it/260x180" alt="">
+                      </a>
+                    </li>
+                  </ul>     
+    </div>
+    </div><!--.story--> 
+    </div>
+</div>
+<!--#portfolio-->
+
+<!--#calendar-->
+<div id="calendar">
+    <div class="story">
+        <div class="container">
+                <h1>Calendar</h1>
+                <p>Music lessons take place Monday to Saturdays from 9:00am to 6:00pm. <a href="#contact">Contact us</a> now to schedule a sample lesson.</p>
+                <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=500&amp;wkst=1&amp;bgcolor=%23C7B6AC&amp;src=o0h8ar8iu15ef3j5h82b5au2tk%40group.calendar.google.com&amp;color=%238C500B&amp;src=r8mpn2s3fshpd0c1425pflsgo4%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FNew_York" style=" border-width:0 " width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+               
+        </div>
+    </div><!--.story--> 
+</div>
+<!--#calendar-->
+
+<!--#contact-->
+<div id="contact">
+	<div class="container-fluid">
+	    <div class="story">
+        	<div class="row-fluid">
+            <div class="span4">
+                <h1>Contact us</h1>
+                <p>Phone:+1 617-600-8457<br></p>
+                <form id="contact" action="" method="post" name="contact">
+                  <label>Name</label>
+                  <input type="text" id="id_name" class="input-xxlarge" name="name" placeholder="Name">
+                  <label>Email</label>
+                  <input type="text" id="id_email" class="input-xxlarge" name="email" placeholder="Email">
+                  <label>Message</label>
+                  <textarea id="id_message" rows="3" class="input-xxlarge" name="message" placeholder="Message"></textarea>
+                  <button type="submit" class="btn">Submit</button>
+                </form>
+            </div> <!-- /span --> 
+            </div>
+        </div>
+    </div>
+</div>
+<!--#contact-->
+
+
+<!-- footer --> 
+<footer class="footer"> 
+	<div class="row">
+	<div class="span2"><a class="btn btn-inverse" href=""><i class="icon-bookmark"></i>Bookmark</a> </div> <!-- sample button -->
+    <div class="span3"><p> &copy; Daniela's Music 2012</p></div>
+    </div>
+</footer>
+<!-- /footer --> 
+
+<!-- Le JS --> 
+<script src="js/bootstrap-notify.js"></script>
+<script>
+$(document).ready(function(){
+	$('#navi').localScroll(800);
+	RepositionNav();
+	$(window).resize(function(){
+		RepositionNav();
+    });
+	});	
+	// .parallax(xPosition, adjuster, inertia, outerHeight) options:
+	// xPosition - Horizontal position of the element.
+	// adjuster - y position to start from.
+	// inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling.
+	// outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport.
+	$('#home').parallax("50%", 0, 0.1, true);
+	$('#about').parallax("50%", 0, 0.1, true);
+	$('.bg').parallax("5%", 3000, 0.8, true);
+	$('.bg2').parallax("30%", 3500, 0.8, true);
+	$('#portfolio').parallax("50%", 0, 0.1, true);
+	$('#calendar').parallax("50%", 0, 0.1, true);
+  $('#contact').parallax("50%", 0, 0.1, true);
+
+})
+	$('#navbar').scrollspy();
+</script>
+
+<script>
+$(".collapse").collapse()
+</script>
+
+<script>
+$('.top-left').notify({
+    message: { text: '{{notification}}' }
+  }).show();
+</script>
+
+
+
+<!-- page fade effect - this simple trick first waits for page to load(images, content) and after it's loaded fades it. You can remove it by deleting this section. -->
+<!-- read documentation -->
+<script>
+$(document).ready(function() {
+	$('#page').fadeTo(1500, 1);
+});
+</script>
+<!-- /page fade effect -->
+</body>
+</html>
