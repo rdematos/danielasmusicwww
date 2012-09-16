@@ -42,8 +42,30 @@ class MainPage(webapp.RequestHandler):
         path = os.path.join(os.path.dirname(__file__), 'templates/index.html')
         self.response.out.write(template.render(path, template_values))
 
+class MobilePage(webapp.RequestHandler):
+    def get(self):
+        template_values = {}
+        path = os.path.join(os.path.dirname(__file__), 'templates/mobile.html')
+        self.response.out.write(template.render(path, template_values))
+    def post(self):
+        sender = self.request.get("email")
+        name = self.request.get("name")
+        body = self.request.get("message")
+        message = mail.EmailMessage(sender="rdematos@gmail.com", subject='Danielas Music - Message from: ' + name + ' (' + sender + ')')
+        message.to = "rdematos@gmail.com"
+        message.body = body
+        message.send()
+        notification_text = 'Message sent. Thank you!'
+        template_values = {
+        'notification': notification_text
+        }
+
+        path = os.path.join(os.path.dirname(__file__), 'templates/mobile.html')
+        self.response.out.write(template.render(path, template_values))
+
 application = webapp.WSGIApplication(
-                                     [('/', MainPage)],
+                                     [('/', MainPage),
+                                      ('/mobile', MobilePage)],
                                      debug=True)
 
 def main():
