@@ -95,7 +95,7 @@ span.rnd {
 	padding: 160px 0 0 0;
 }
 #about {
-	background: url(../assets/secondBG.jpg) 50% 0 no-repeat fixed;
+	background: #333;
 	color: white;
 	height: 1300px;
 	margin: 0 auto;
@@ -112,7 +112,7 @@ span.rnd {
 #portfolio h2 {font-weight:300;}
 
 #calendar {
-	background: url(../assets/thirdBG.jpg) 50% 0 no-repeat fixed;
+	background: #333;
 	color: white;
 	height: 1400px;
 	padding: 100px 0 0 0;
